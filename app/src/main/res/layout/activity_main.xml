@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Campus Cash Manager!"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/allowanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekly Allowance:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/remainingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allowanceTextView"
+        android:text="Remaining Allowance:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/addAllowanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Allowance"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/remainingTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/addAllowanceButton"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/totalExpensesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Expenses"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/addExpenseButton"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Add Remove Expenses Button -->
+    <Button
+        android:id="@+id/removeExpensesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Expenses"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/totalExpensesButton"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
